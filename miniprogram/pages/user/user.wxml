@@ -1,0 +1,49 @@
+<!--pages/user/user.wxml-->
+<view class="user_info_wrap">
+  <view wx:if="{{userinfo.avatarUrl}}" class="user_img_wrap">
+    <image class="user_bg" src="https://news.ecnu.edu.cn/_upload/article/images/f7/39/ca7d39954ca39e495cf2d8129970/ab6c35da-be13-4bd8-91eb-8e074385c9d1.jpg"></image>
+    <view class="user_info">
+      <image class="user_icon" src="{{userinfo.avatarUrl}}"></image>
+      <view class="user_name">{{userinfo.nickName}}</view>
+    </view> 
+  </view>
+  <!-- <view wx:else class="user_btn">
+    <navigator url="../login/login">登录</navigator>
+  </view> -->
+  <view wx:else class="user_btn">
+    <button type="primary" plain  open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo"> 登录 </button>
+  </view>
+</view>
+<view class="user_content">
+  <view class="user_main">
+    <view class="user_nav">
+      <navigator>
+        <view>
+          <image class="icon" src="../../icons/icon-like.png"></image>
+          <view class="subtitle">我的支部</view>
+        </view>
+      </navigator>
+      <navigator>
+        <view>
+          <image class="icon" src="../../icons/icon-priaze.png"></image>
+          <view class="subtitle">我的收藏</view>
+        </view>
+      </navigator>
+      <navigator>
+        <view>
+          <image class="icon" src="../../icons/icon-comt.png"></image>
+          <view class="subtitle">智能问答</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>
+
+<view class="app_info">
+  <view class="app_info_item">消息中心</view>
+  <view class="app_info_item">意见反馈</view>
+  <view class="app_info_item">关于我们</view>
+</view>
+<view class="setting">
+  个人设置
+</view>

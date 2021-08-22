@@ -1,0 +1,88 @@
+/* pages/user/user.wxss */
+page{
+  background-color: #edece8;
+  font-size: 30rpx;
+}
+.user_info_wrap{
+  height: 50vh;
+  background-color: var(-themeColor);
+}
+.user_img_wrap{
+  position: relative;
+  font-size: 40rpx;
+}
+.user_bg{
+  height: 40vh;
+  width: 100%;
+  /* filter: blur(10rpx); */
+}
+.user_icon{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.user_name{
+  margin-top: 40rpx;
+  /* font-size: 40rpx; */
+  color: #fff;
+}
+.user_info{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  text-align: center;
+}
+.user_btn{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15%;
+  /* border: 1rpx solid yellowgreen; */
+  /* color: yellowgreen; */
+  /* font-size: 38rpx; */
+  /* padding: 10rpx; */
+  /* border-radius: 10rpx; */
+  width: 200rpx;
+}
+
+.user_content{
+  position: relative;
+}
+.user_main{
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -150rpx;/* 上移 */
+}
+.user_nav{
+  background-color: #fff;
+  display: flex;
+  border-radius: 10rpx;
+}
+navigator{
+  flex: 1;
+  text-align: center;
+  padding: 40rpx 0;
+}
+.icon{
+  width: 70rpx;
+  height: 70rpx;
+}
+.app_info{
+  margin-top: 100rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  background-color: #fff;
+}
+.app_info_item{
+  padding: 20rpx;
+}
+.setting{
+  margin-top: 50rpx;
+  background-color: #fff;
+  padding: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}

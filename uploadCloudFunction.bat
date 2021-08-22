@@ -1,0 +1,1 @@
+"E:\360downloads\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-2gnwgclg44e97d5a --n quickstartFunctions --r --project "E:\.idea\大四上\党建小程序\云服务test" --report
