@@ -33,7 +33,7 @@
             <view class='create-time'>{{item.time}}</view>
           </view>
         </view>
-        <image src="{{item.image}}" class='cover'></image>
+        <image src="{{item.image_url}}" class='cover'></image>
       </view>
     </view>
   </swiper-item>

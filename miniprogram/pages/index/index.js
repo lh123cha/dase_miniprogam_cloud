@@ -30,39 +30,37 @@ Page({
         title:"“党在我心中”主题党日活动"
       }
     ],
-    newsList:[
-      {
-        image:"http://zzb.ecnu.edu.cn/_upload/article/images/f8/cb/698259244e76bd172450147c29e1/23161c4c-07ce-415e-bbc4-0e5b2e5c4a8c.jpg",
-        title:"教工第一党支部开展“改革潮涌，奋楫者先”主题党日活动",
-        publisher:"数据学院党委",
-        time:"2020-12-28"
-      },
-      {
-        image:"http://zzb.ecnu.edu.cn/_upload/article/images/3b/ed/f63c5ff4446b8a626d569c035ae2/e10dec48-4bab-418d-91e4-5175473404b1.jpg",
-        title:"学习贯彻五中全会精神，有效推进党建与育人相融合",
-        publisher:"数据学院党委",
-        time:"2020-11-30"
-      },
-      {
-        image:"http://zzb.ecnu.edu.cn/_upload/article/images/5b/1f/7c0dacae471c87a938fb17639327/ef4f0202-4961-47b9-b5d2-7b5e8094af35.jpg",
-        title:"“传承红色基因 聆听四史故事”“四史”主题党日活动",
-        publisher:"数据学院党委",
-        time:"2020-11-24"
-      },
-      {
-        image:"http://zzb.ecnu.edu.cn/_upload/article/images/38/0f/934d8c044b3fa05bd772ce1edd73/9b4c4073-8711-4e27-b38a-062497fd5e65.png",
-        title:"研究生第一党支部参观《陈云与党风廉政建设》专题展",
-        publisher:"数据学院党委",
-        time:"2020-10-20"
-      },
-      {
-        image:"http://zzb.ecnu.edu.cn/_upload/article/images/31/44/f0507a784da281018e2111361bf5/51a24553-36fb-4457-b3bb-58f3820a9534.png",
-        title:"《铭记党的历程，永远不忘初心》“四史”学习教育专题党课",
-        publisher:"数据学院党委",
-        time:"2020-06-23"
-      },
-      
-    ],
+    // newsList:[{
+    //     image:"http://zzb.ecnu.edu.cn/_upload/article/images/f8/cb/698259244e76bd172450147c29e1/23161c4c-07ce-415e-bbc4-0e5b2e5c4a8c.jpg",
+    //     title:"教工第一党支部开展“改革潮涌，奋楫者先”主题党日活动",
+    //     publisher:"数据学院党委",
+    //     time:"2020-12-28"
+    //   },
+    //   {
+    //     image:"http://zzb.ecnu.edu.cn/_upload/article/images/3b/ed/f63c5ff4446b8a626d569c035ae2/e10dec48-4bab-418d-91e4-5175473404b1.jpg",
+    //     title:"学习贯彻五中全会精神，有效推进党建与育人相融合",
+    //     publisher:"数据学院党委",
+    //     time:"2020-11-30"
+    //   },
+    //   {
+    //     image:"http://zzb.ecnu.edu.cn/_upload/article/images/5b/1f/7c0dacae471c87a938fb17639327/ef4f0202-4961-47b9-b5d2-7b5e8094af35.jpg",
+    //     title:"“传承红色基因 聆听四史故事”“四史”主题党日活动",
+    //     publisher:"数据学院党委",
+    //     time:"2020-11-24"
+    //   },
+    //   {
+    //     image:"http://zzb.ecnu.edu.cn/_upload/article/images/38/0f/934d8c044b3fa05bd772ce1edd73/9b4c4073-8711-4e27-b38a-062497fd5e65.png",
+    //     title:"研究生第一党支部参观《陈云与党风廉政建设》专题展",
+    //     publisher:"数据学院党委",
+    //     time:"2020-10-20"
+    //   },
+    //   {
+    //     image:"http://zzb.ecnu.edu.cn/_upload/article/images/31/44/f0507a784da281018e2111361bf5/51a24553-36fb-4457-b3bb-58f3820a9534.png",
+    //     title:"《铭记党的历程，永远不忘初心》“四史”学习教育专题党课",
+    //     publisher:"数据学院党委",
+    //     time:"2020-06-23"
+    //   }],
+    newsList:[],
     eventsList:[
       {
         date:"1939年4月24日",
@@ -71,7 +69,7 @@ Page({
       {
         date:"1945年4月24日",
         texts:["  毛泽东向中共七大提交《论联合政府》的书面政治报告。报告分析了国际国内形势，系统地总结了抗战中两条不同指导路线的斗争和人民战争的基本经验，阐述了中国共产党在民族民主革命阶段的一般纲领和具体纲领，指出中国人民应当争取打败侵略者、建设新中国的前途。","关于一般纲领，报告指出：我们的主张是，在彻底打败日本侵略者之后，建立一个全国绝大多数人民为基础而在工人阶级领导之下的统一战线的民主联盟的国家制度，即新民主主义的国家制度.关于具体纲领，报告提出的主要内容是：彻底消灭日本侵略者，不许中途妥协；废止国民党一党专政，建立民主的联合政府；争取人民的自由；实行人民的统一；建立人民的军队；实行农村改革（抗日期间实行减租减息）；发展民族工业；发展文化教育事业，团结知识分子；争取少数民族在政治、经济、文化的解放和发展；建立和平、独立、民主的外交。在这些具体纲领中，最重要的就是建立联合政府。一切这些具体纲领，如果没有一个举国一致的民主的联合政府，就不可能顺利地在全中国实现。"]
-      },  
+      },
     ],
     userInfo: {},
     hasUserInfo: false,
@@ -99,14 +97,46 @@ Page({
       url: '../logs/logs'
     })
   },
+  //页面加载函数
   onLoad() {
     if (wx.getUserProfile) {
       this.setData({
         canIUseGetUserProfile: true
       })
     }
-    this.setData({
-      winHeight:488+this.data.newsList.length*250
+    wx.showLoading({
+      title: '',
+    })
+    this.getNewsList();
+  },
+  getNewsList(){
+    var that=this;
+    console.log("before is"+that.data.newsList);
+    console.log(that.data.newsList)
+    wx.cloud.callFunction({
+      name: 'EssayFunctions',
+      config: {
+        env: that.data.envId
+      },
+      data: {
+        type: 'getEssay'
+      }
+    }).then((resp) => {
+      that.setData({
+        newsList: resp.result.data,
+      });
+      console.log(resp.result.data);
+      console.log(that.data.newsList)
+      that.setData({
+        winHeight:488+that.data.newsList.length*250
+      })
+      wx.hideLoading()
+    }).catch((e) => {
+      console.log(e)
+      that.setData({
+        showUploadTip: true
+      })
+      wx.hideLoading()
     })
   },
   getUserProfile(e) {
