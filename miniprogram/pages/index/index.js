@@ -107,11 +107,12 @@ Page({
     wx.showLoading({
       title: '',
     })
-    this.getNewsEventsList();
+    this.getList();
   },
-  getNewsEventsList(){
+  getList(){
     var that=this;
     console.log("before is"+that.data.newsList);
+
     wx.cloud.callFunction({
       name:'EssayFunctions',
       config:{
