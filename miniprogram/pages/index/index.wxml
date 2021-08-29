@@ -48,8 +48,8 @@
       <image class="daliy-news-cover" src="http://p1.img.cctvpic.com/photoworkspace/contentimg/2021/04/21/2021042114572193998.png"></image>
       <view class='daily-events' wx:for="{{eventsList}}" wx:key="date">
         <text class="daliy-news-date">{{item.date}}</text>
-        <text class="daliy-news-words" wx:for="{{item.texts}}" decode="{{true}}">
-          &emsp;&emsp;{{item}}</text>
+        <text class="daliy-news-words" decode="{{true}}">
+          &emsp;&emsp;{{item.texts}}</text>
       </view>
     </view>
 
