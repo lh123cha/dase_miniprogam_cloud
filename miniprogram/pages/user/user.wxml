@@ -17,6 +17,12 @@
 <view class="user_content">
   <view class="user_main">
     <view class="user_nav">
+    <navigator url="../addPage/addnews" open-type="navigate">
+      <view>
+        <image class="icon" src="../../icons/icon-more.png"></image>
+          <view class="subtitle">发布资讯</view>
+      </view>
+    </navigator>
       <navigator>
         <view>
           <image class="icon" src="../../icons/icon-like.png"></image>
