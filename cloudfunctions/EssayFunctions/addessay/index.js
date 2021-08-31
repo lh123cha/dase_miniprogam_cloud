@@ -14,7 +14,7 @@ exports.main = async (event, context) => {
     // data 字段表示需新增的 JSON 数据
     data: {
       image_url:event.image_url,
-      off_account_url: event.off_account_url,
+      content_url: event.content_url,
       publisher: event.publisher,
       time:event.time,
       title:event.title

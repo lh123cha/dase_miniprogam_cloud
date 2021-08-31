@@ -6,14 +6,7 @@
  
 <form bindsubmit="formSubmit">
 <view class='list'>
-  <view class='icon'>
-    <text>头像</text>
-    <view class='icon-img'>  
-      <image class='icon-head' src='{{touxiang}}'></image>
-      <image class='icon-r' src='{{icon_r}}'></image>
-    </view>
-  </view>
- 
+
   <view class='title'>
     <text>标题</text>
     <input name="title" type='text' placeholder-style='font-size:28rpx;' placeholder='请输入文章标题'></input>
@@ -24,22 +17,18 @@
     <input name="image_url" type="text" placeholder-style="font-size:28rpx;"
     placeholder="请输入图片链接"></input>
   </view>
- 
-  <view class='phone'>
-    <text>手机</text>
-    <input name="phone" type='text' placeholder-style='font-size:28rpx;' placeholder='请输入你的手机号'></input>
+
+  <view class='content_url'>
+    <text>内容链接</text>
+    <input name="content_url" type="text" placeholder="请填写内容链接" placeholder-style="font-size:28rpx"></input>
   </view>
  
+  <view class='publisher'>
+    <text>发布人</text>
+    <input name="publisher" type='text' placeholder-style='font-size:28rpx;' placeholder='请填写发布人(默认数据学院党委)'></input>
+  </view>
  
-<view class='baseInfo'>
-  <image src='../../../image/titleTag.png'></image>
-  <text>基本信息</text>
-</view>
- 
-<view class='info'>
-    <text>身份证号</text>
-    <input name="idNumber" type='text' placeholder-style='font-size:28rpx;' placeholder='请输入证件号码'></input>
-</view>
+
  
 </view>
  
@@ -47,11 +36,11 @@
 </form>
  
 <!-- 模态框 -->
-<modal class="modal" title='要提交的信息' hidden="{{modalHidden}}" bindcancel='modalCancel' bindconfirm='modalConfirm'>
+<!-- <modal class="modal" title='要提交的信息' hidden="{{modalHidden}}" bindcancel='modalCancel' bindconfirm='modalConfirm'>
     <view>姓名:{{information.name}}</view>
     <view>姓别:{{userSex}}</view>
     <view>手机:{{information.phone}}</view>
     <view>身份证号：{{information.idNumber}}</view>
-</modal>
+</modal> -->
 <!-- /模态框 -->
 
