@@ -2,6 +2,7 @@
 // 获取应用实例
 const app = getApp()
 
+var time= require("../../utils/util.js");
 Page({
   data: {
     currentIndexNav:0,//被点击首页导航菜单的索引
@@ -144,6 +145,7 @@ Page({
         type: 'getEssay'
       }
     }).then((resp) => {
+      resp.result.data.time=time.formatTime(resp.result.data.time);
       that.setData({
         newsList: resp.result.data,
       });

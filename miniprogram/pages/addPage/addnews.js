@@ -99,7 +99,8 @@ Page({
         title:that.data.title,
         image_url:that.data.image_url,
         content_url:that.data.content_url,
-        time:that.data.that
+        time:that.data.time,
+        publisher:that.data.publisher
       }
     }).then((resp)=>{
       console.log(resp);
