@@ -112,8 +112,6 @@ Page({
   },
   getList(){
     var that=this;
-    console.log("before is"+that.data.newsList);
-
     wx.cloud.callFunction({
       name:'EssayFunctions',
       config:{
@@ -127,7 +125,6 @@ Page({
       that.setData({
         eventsList:resp.result.data,
       });
-      console.log(that.data.eventsList);
     }).catch((e) => {
       console.log(e)
       that.setData({
@@ -145,7 +142,11 @@ Page({
         type: 'getEssay'
       }
     }).then((resp) => {
-      resp.result.data.time=time.formatTime(resp.result.data.time);
+      for(var j=0;j<resp.result.data.length;j++){
+        resp.result.data[j].time=time.formatTime(resp.result.data[j].time);
+      }
+      console.log(resp.result.data);
+      // resp.result.data.time=time.formatTime(resp.result.data.time);
       that.setData({
         newsList: resp.result.data,
       });
