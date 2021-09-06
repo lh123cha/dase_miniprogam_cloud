@@ -1,7 +1,7 @@
 <!--pages/addPage/addnews.wxml-->
 <view class='baseInfo'>
-  <image src='../../../image/titleTag.png'></image>
-  <text>基本信息</text>
+  <image src='../../images/database.png'></image>
+  <text>文章基本信息</text>
 </view>
  
 <form bindsubmit="formSubmit">
