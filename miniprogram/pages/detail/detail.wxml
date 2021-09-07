@@ -1,0 +1,17 @@
+<!--miniprogram/pages/detail/detail.wxml-->
+<view class="title">
+  数据学院教工第一党支部开展“改革潮涌，奋楫者先”主题党日活动
+</view>
+<view class="publisher-info">
+  <image class="face" src='http://www.mba.ecnu.edu.cn/_upload/article/9c/7b/866ad94b433fb839471815a6fab9/db3b1980-3527-4ee0-867c-998a34659037.png'></image>
+
+  <view class="words">
+    <view class="nickname">数据学院</view>
+    <view class="normal-info">
+      <class class="original">原创</class>
+      <view class="create-time">发布于{{detailChosen.time}}</view>
+    </view>
+  </view>
+</view>
+
+<rich-text class="news-desc" nodes="{{detailChosen.content}}"></rich-text>
