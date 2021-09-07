@@ -9,8 +9,8 @@ const db = cloud.database()
 exports.main = async (event, context) => {
   // 返回数据库查询结果
   try{
-    res=db.collection('detail').where({
-      news_id:event.news_id
+    res=db.collection('newsList').where({
+      _id:event.news_id
     }).get();
   }catch(exption){
     console.log("Get Error");

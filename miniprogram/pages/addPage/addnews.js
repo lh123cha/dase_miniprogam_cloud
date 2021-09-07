@@ -10,6 +10,7 @@ Page({
     title:'',
     publisher:'数据学院党委',
     time:'',
+    content:"",
     modalHidden:true
   },
 
@@ -77,6 +78,7 @@ Page({
     var image_url=e.detail.value.image_url;
     var content_url=e.detail.value.content_url;
     var publisher=e.detail.value.publisher;
+    var content=e.detail.value.content;
     var time=Date.now();
     if(publisher==''){
       publisher='数据学院党委'
@@ -87,6 +89,7 @@ Page({
       content_url:content_url,
       time:time,
       publisher:publisher,
+      content:content,
       modalHidden:false
     })
     wx.cloud.callFunction({
@@ -100,7 +103,8 @@ Page({
         image_url:that.data.image_url,
         content_url:that.data.content_url,
         time:that.data.time,
-        publisher:that.data.publisher
+        publisher:that.data.publisher,
+        content:that.data.content
       }
     }).then((resp)=>{
       console.log(resp);

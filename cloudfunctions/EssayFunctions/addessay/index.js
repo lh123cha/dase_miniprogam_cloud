@@ -17,7 +17,8 @@ exports.main = async (event, context) => {
       content_url: event.content_url,
       publisher: event.publisher,
       time:event.time,
-      title:event.title
+      title:event.title,
+      content:event.content
     }
   })
   return {
