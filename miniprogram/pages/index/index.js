@@ -21,16 +21,7 @@ Page({
         text:"图解党建"
       }
     ],
-    swiperList:[
-      {
-        image:"http://dase.ecnu.edu.cn//dase-module-admin/uploads/image/20210409/1617957626259028186.png",
-        title:"党史学习教育动员会"
-      },
-      {
-        image:"http://dase.ecnu.edu.cn//dase-module-admin/uploads/image/20210419/1618834506340049006.jpeg",
-        title:"“党在我心中”主题党日活动"
-      }
-    ],
+    swiperList:[],
     newsList:[],
     eventsList:[],
     graphList:[],
@@ -84,6 +75,7 @@ Page({
       title: '',
     })
     this.getList();
+    // console.log(this.data.swiperList);
   },
   getList(){
     var that=this;
@@ -120,11 +112,15 @@ Page({
       for(var j=0;j<resp.result.data.length;j++){
         resp.result.data[j].time=time.formatTime(resp.result.data[j].time);
       }
-      console.log(resp.result.data);
       // resp.result.data.time=time.formatTime(resp.result.data.time);
       that.setData({
         newsList: resp.result.data,
       });
+      console.log(that.data.newsList.slice(1,3));
+      that.setData({
+        swiperList:that.data.newsList.slice(0,2)
+      })
+      console.log(that.data.swiperList);
       that.setData({
         winHeight:488+that.data.newsList.length*250
       })
@@ -150,7 +146,6 @@ Page({
       for(var j=0;j<resp.result.data.length;j++){
         resp.result.data[j].time=time.formatTime(resp.result.data[j].time);
       }
-      console.log(resp.result.data);
       // resp.result.data.time=time.formatTime(resp.result.data.time);
       that.setData({
         graphList: resp.result.data,

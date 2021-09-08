@@ -14,6 +14,18 @@
   <swiper-item>
     <view>
       <swiper class="swiper__container" indicator-dots autoplay >
+        <swiper-item wx:for="{{swiperList}}" wx:key="id"  data-newsid="{{item._id}}" bindtap='showDetail'>
+            <image src="{{item.image_url}}" class="swiper_item" ></image>
+            <view class="swiper__desc">
+              <text class="swiper__text">{{item.title}}</text>
+              <text class="swiper__id">[{{index+1}}/{{swiperList.length}}]</text>
+            </view>
+          </swiper-item>
+      </swiper>
+    </view>
+
+    <!-- <view>
+      <swiper class="swiper__container" indicator-dots autoplay >
         <swiper-item wx:for="{{swiperList}}" wx:key="id">
             <image src="{{item.image}}" class="swiper_item" ></image>
             <view class="swiper__desc">
@@ -22,7 +34,7 @@
             </view>
           </swiper-item>
       </swiper>
-    </view>
+    </view> -->
 
     <view class='news'>
       <view class='pic-words' wx:for="{{newsList}}" wx:key="title" data-newsid="{{item._id}}" bindtap='showDetail'>
