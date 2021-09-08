@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/user/user",
     "pages/img/img",
-    "pages/addPage/addnews"
+    "pages/addPage/addnews",
+    "pages/graphParty/graph"
   ],
   "window": {
     "backgroundTextStyle": "light",

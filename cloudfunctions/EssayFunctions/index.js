@@ -4,6 +4,7 @@ const addEssay = require('./addessay/index')
 const getHistory = require('./getHistory/index')
 const getAuthor = require('./getAuthor/index')
 const getDetail = require('./getDetail/index')
+const getGraph = require('./getGraph/index')
 
 exports.main = async (event, context) => {
   switch (event.type) {
@@ -17,5 +18,9 @@ exports.main = async (event, context) => {
       return await getAuthor.main(event,context);
     case 'getDetail':
       return await getDetail.main(event,context);
+    case 'getGraph':
+      return await getGraph.main(event,context);
+    case 'getSingleGrapth':
+      return await getGraph.getsingle(event,context);
   }
 }

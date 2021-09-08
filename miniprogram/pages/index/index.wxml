@@ -56,5 +56,22 @@
 
 
   </swiper-item>
+  <!--图解党建-->
+  <swiper-item>
+
+    <view class='pictures'>
+      <view class='pic-words' wx:for="{{graphList}}" wx:key="title" data-graphid="{{item._id}}" bindtap='showGraphDetail'>
+        <view class='words'>
+          <view class='news-title title-words'>{{item.title}}</view>
+          <view class='publish'>
+            <view class='publisher'>{{item.publisher}}</view>
+            <view class='create-time'>{{item.time}}</view>
+          </view>
+        </view>
+        <image src="https://img1.baidu.com/it/u=1221615154,2856613008&fm=26&fmt=auto&gp=0.jpg" class='cover'></image>
+      </view>
+    </view>
+
+  </swiper-item>
 </swiper>
 

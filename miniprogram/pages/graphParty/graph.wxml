@@ -1,0 +1,34 @@
+<!--pages/graphParty/graph.wxml-->
+<view class="title">
+  <view class="title">{{graphChosen.title}}</view>
+</view>
+<view class="publisher-info">
+  <image class="face" src='http://www.mba.ecnu.edu.cn/_upload/article/9c/7b/866ad94b433fb839471815a6fab9/db3b1980-3527-4ee0-867c-998a34659037.png'></image>
+
+  <view class="words">
+    <view class="nickname">数据学院</view>
+    <view class="normal-info">
+      <class class="original">原创</class>
+      <view class="create-time">发布于{{graphChosen.time}}</view>
+    </view>
+  </view>
+</view>
+
+<image src="{{ graphChosen.image_url }}" bindload="imageLoad" data-index="index" 
+style="width:{{ images.width }}rpx; height:{{ images.height }}rpx;"></image>
+
+
+
+<view class="words">>
+    <view class="normal-info">
+      <class>阅读量： {{graphChosen.read_num}}</class>
+      <view class="create-time">点赞数{{graphChosen.like_num}}</view>
+    </view>
+  </view>
+
+<!-- <view class="imgbox">
+	<image class="vidimg" mode="aspectFill" src="{{graphChosen.image_url}}" alt="" />
+</view> -->
+
+<!-- <rich-text class="news-desc" nodes="{{detailChosen.content}}"></rich-text> -->
+

@@ -33,6 +33,7 @@ Page({
     ],
     newsList:[],
     eventsList:[],
+    graphList:[],
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
@@ -58,6 +59,12 @@ Page({
     var newsID = e.currentTarget.dataset.newsid;
     wx.navigateTo({
       url: '/pages/detail/detail?newsID='+newsID,
+    })
+  },
+  showGraphDetail(e){
+    var graphgID = e.currentTarget.dataset.graphid;
+    wx.navigateTo({
+      url: '/pages/graphParty/graph?graphID='+graphgID,
     })
   },
   // 事件处理函数
@@ -121,6 +128,33 @@ Page({
       that.setData({
         winHeight:488+that.data.newsList.length*250
       })
+      wx.hideLoading()
+    }).catch((e) => {
+      console.log(e)
+      that.setData({
+        showUploadTip: true
+      })
+      wx.hideLoading()
+    });
+
+    //获得图解党建列表
+    wx.cloud.callFunction({
+      name: 'EssayFunctions',
+      config: {
+        env: that.data.envId
+      },
+      data: {
+        type: 'getGraph'
+      }
+    }).then((resp) => {
+      for(var j=0;j<resp.result.data.length;j++){
+        resp.result.data[j].time=time.formatTime(resp.result.data[j].time);
+      }
+      console.log(resp.result.data);
+      // resp.result.data.time=time.formatTime(resp.result.data.time);
+      that.setData({
+        graphList: resp.result.data,
+      });
       wx.hideLoading()
     }).catch((e) => {
       console.log(e)
